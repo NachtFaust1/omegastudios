@@ -1,6 +1,10 @@
 'use client'
 import { Testimonial, Footers } from "../components/index";
 
+export const metadata = {
+    title: 'Home - Omega Studios',
+}
+
 export default function Home() {
   const buttonClick = () => {
       window.location.href = "https://discord.gg/JPFAzkWDPR"

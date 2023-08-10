@@ -4,7 +4,11 @@ import { Listbox } from "@headlessui/react";
 import { Fragment, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
-import { CheckIcon } from '@heroicons/react/20/solid'
+
+export const metadata = {
+    title: 'Contact - Omega Studios',
+}
+  
 
 export default function Contacts() {
     const form = useRef();

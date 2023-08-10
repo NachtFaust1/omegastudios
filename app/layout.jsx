@@ -1,9 +1,11 @@
 'use client'
 import './globals.css'
-import { Navbars } from "./components/index";
 
 export const metadata = {
-  title: 'Home - Omega Studios',
+  title: {
+    default: "Omega Studios",
+    template: "%s - Omega Studios"
+  },
   description: 'Omega Studios is a team of developers that develops projects, mostly discord bots and websites.',
   image: '',
   site_name: 'Omega Studios',

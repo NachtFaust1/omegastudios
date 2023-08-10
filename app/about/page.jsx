@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { team } from "../constants";
 
+export const metadata = {
+    title: 'About - Omega Studios',
+}
+
 export default function About() {
     const imageProperties = {
         color: 'transparent',
