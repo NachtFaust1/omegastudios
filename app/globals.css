@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Montserrat,sans-serif;
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 37 41/var(--tw-bg-opacity))
+}
+.border-gradient-after, .border-gradient-before {
+  content: "";
+  position: relative;
+  z-index: 1;
+}
+.border-gradient-after:after, .border-gradient-before:before {
+  background: radial-gradient(50% 56400% at 50% 100%,rgba(169,163,194,.24) 0,rgba(169,163,194,0) 100%);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.bg-squares {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://i.imgur.com/tBURPfN.png");
+  background-size: 35px;
+}
+.square-shadow {
+  background: radial-gradient(circle,rgba(18,18,33,.2) 0,#121221 50%,#121221 100%),linear-gradient(0deg,#121221 0,rgba(18,18,33,0));
+}
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 47/var(--tw-bg-opacity));
+}
+.bg-_secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 58 64/var(--tw-bg-opacity));
+}
+.bg-_gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 22 37/var(--tw-bg-opacity));
+}
+.bg-_gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 29 43/var(--tw-bg-opacity));
+}
+.bg-_gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(73 80 87/var(--tw-bg-opacity));
+}
+.border-_gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(37 37 50/var(--tw-border-opacity));
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  outline: none;
+  border: none;
+  background: transparent;
+  padding: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #212529;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F8F9FA;
+  inline-size: 100px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CED4DA
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #CED4DA
+}
