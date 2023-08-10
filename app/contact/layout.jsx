@@ -1,7 +1,15 @@
-'use client'
 import '../globals.css';
 import { Navbars } from "../components/index";
 import toast, { Toaster } from 'react-hot-toast';
+
+export const metadata = {
+  title: 'Contact - Omega Studios',
+  description: 'Omega Studios is a team of developers that develops projects, mostly discord bots and websites.',
+  image: '',
+  site_name: 'Omega Studios',
+  type: 'website',
+  url: 'https://omegastudios.dev',
+}
 
 export default function ContactsLayout({ children }) {
   return (

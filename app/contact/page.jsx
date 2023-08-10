@@ -5,11 +5,6 @@ import { Fragment, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
-export const metadata = {
-    title: 'Contact - Omega Studios',
-}
-  
-
 export default function Contacts() {
     const form = useRef();
     const sendEmail = (e) => {

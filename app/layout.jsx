@@ -1,11 +1,7 @@
-'use client'
 import './globals.css'
 
 export const metadata = {
-  title: {
-    default: "Omega Studios",
-    template: "%s - Omega Studios"
-  },
+  title: 'Home - Omega Studios',
   description: 'Omega Studios is a team of developers that develops projects, mostly discord bots and websites.',
   image: '',
   site_name: 'Omega Studios',
