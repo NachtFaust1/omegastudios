@@ -1,5 +1,5 @@
+import { Footers, Navbars } from '../../components';
 import '../globals.css';
-import { Navbars } from "../components/index";
 import toast, { Toaster } from 'react-hot-toast';
 
 export const metadata = {
@@ -24,6 +24,7 @@ export default function ContactsLayout({ children }) {
           <meta property="og:image" content={metadata.image} />
           <meta property="og:url" content={metadata.url} />
           <meta property="og:site_name" content={metadata.site_name} />
+          <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"></link>
         </head>
         <body>
           <div div className='xl:hidden w-full'>
@@ -45,6 +46,9 @@ export default function ContactsLayout({ children }) {
           <main className='min-w-[32svh]'>
               {children}
           </main>
+          <div className='pt-32'>
+            <Footers />
+          </div>
         </body>
       </html>
     </>

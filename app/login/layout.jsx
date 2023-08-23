@@ -1,8 +1,9 @@
-import '../../app/globals.css';
-import { Footers, Navbars } from '../../components';
+import { Navbars } from '../../components';
+import '../globals.css';
+import toast, { Toaster } from 'react-hot-toast';
 
 export const metadata = {
-  title: 'About - Omega Studios',
+  title: 'Login - Omega Studios',
   description: 'Omega Studios is a team of developers that develops projects, mostly discord bots and websites.',
   image: '',
   site_name: 'Omega Studios',
@@ -10,7 +11,7 @@ export const metadata = {
   url: 'https://omegastudios.dev',
 }
 
-export default function AboutLayout({ children }) {
+export default function LoginLayout({ children }) {
   return (
     <>
       <html lang="en">
@@ -26,27 +27,12 @@ export default function AboutLayout({ children }) {
           <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"></link>
         </head>
         <body>
-          <div div className='xl:hidden w-full'>
-            <div className='container w-full flex justify-between items-center py-6'>
-                <a href='/'>
-                    <div className='flex items-center gap-2 group hover:opacity-50 transition-all duration-200'>
-                      <img src="https://i.imgur.com/OKTPfAw.png" width="70" height="70" />
-                    </div>
-                </a>
-                <div className='flex items-center gap-4'>
-                  <i className="fas fa-bars text-2xl text-white"></i>
-                </div>
-            </div>
-          </div>
           <div className='hidden xl:block w-full'>
             <Navbars />
           </div>
           <main className='min-w-[32svh]'>
               {children}
           </main>
-          <div className='pt-32'>
-            <Footers />
-          </div>
         </body>
       </html>
     </>

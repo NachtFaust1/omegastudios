@@ -1,8 +1,13 @@
 export const navLinks = [
+    // {
+    //     id: "projects",
+    //     title: "Projects",
+    //     target: "/projects"
+    // },
     {
-        id: "projects",
-        title: "Projects",
-        target: "/projects"
+        id: "Home",
+        title: "Home",
+        target: "/",
     },
     {
         id: "about",
@@ -22,11 +27,11 @@ export const Links = [
         title: "Home",
         target: "/",
     },
-    {
-        id: "projects",
-        title: "Projects",
-        target: "/projects"
-    },
+    // {
+    //     id: "projects",
+    //     title: "Projects",
+    //     target: "/projects"
+    // },
     {
         id: "about",
         title: "About",
@@ -68,7 +73,7 @@ export const socialLogo = [
     {
         id: 'youtube',
         title: 'Youtube Link',
-        target: 'https://youtube.com',
+        target: 'https://www.youtube.com/@omegastudios_',
         icon: 'fab fa-youtube'
     }
 ];
@@ -77,7 +82,7 @@ export const team = [
     {
         id: 'nacht',
         name: 'Nacht',
-        role: 'Founder',
+        role: 'Founder & Developer',
         image: 'https://cdn.discordapp.com/avatars/928640467619434526/9f76e3ab9520282adcf9b20df69c157d.webp'
     },
     {
